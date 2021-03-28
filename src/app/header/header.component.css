@@ -1,0 +1,36 @@
+nav{
+    border-radius: 25px 25px 0 0;
+}
+
+.navbar{
+    padding: 10px;
+    background-color: rgba(151, 3, 52, 0.767);
+    background:linear-gradient(to right, rgba(151, 3, 52, 0.767),rgb(214, 122, 122));
+
+    
+}
+.navbar a,.navbar ul li{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+nav a img{
+    border-radius: 8px;
+}
+#my-toggler-btn{
+    background-color: white;
+    color: rgba(151, 3, 52, 0.767);
+}
+
+ul li a{
+    padding-right: 20px;
+    border-radius: 10px;
+
+}
+ul li a:hover{
+    background-color: white;
+    color: rgba(151, 3, 52, 0.767);
+    
+}
+

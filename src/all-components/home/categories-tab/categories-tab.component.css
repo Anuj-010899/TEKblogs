@@ -1,0 +1,47 @@
+#category-div{
+    text-align: center;
+    max-width: 100%;
+    border:  rgba(151, 3, 52, 0.767) 2px solid;
+    /* margin-bottom: 4%;
+    margin-top: 3%; */
+    margin: 3% 0 4% 0;
+    padding: 1% 7%;
+    height: 97%;
+    border-radius: 30px;
+    
+    animation-name: animateme;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes animateme{
+    from{background-color: rgba(212, 189, 250, 0.527);
+    }
+    to{background-color:rgba(246, 248, 144, 0.466);
+    }
+}
+
+#category-div div{
+    border-radius: 20px;
+}
+button{
+    width:100%;
+    height: 65px;
+    border-radius: 20px;
+    
+}
+
+div.card-body{
+    padding: 0;
+   
+}
+#category-div button{
+    /* background-color: rgba(151, 3, 52, 0.767); */
+    background:linear-gradient(to right, rgba(151, 3, 52, 0.767),rgb(216, 103, 103));
+    /* 236, 131, 131 */
+    font-weight: bold;
+    color: white;
+}
+#category-div button:hover{
+    /* color:rgba(151, 3, 52, 0.767) ; */
+    background:rgb(156, 54, 40);
+}

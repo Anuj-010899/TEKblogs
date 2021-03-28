@@ -1,0 +1,41 @@
+<div class="button-container">
+  <button class="btn btn-success btn-md" (click)="backButton()">Back</button>
+</div>
+
+<h1 >Blog Category- {{results[0].category}} </h1>
+<div class="">
+  <label for="search-bar">Search Bar</label>
+
+  <input #box type="search" id="search-bar" class="form-control" name="searchForm" (keyup)="searchBlogs(box.value)" placeholder="Search By Author Name or Blog Title">
+</div>
+
+
+<div *ngIf="box.value!==''">
+  <h1 >Your Searched Value: {{box.value}} </h1>
+</div>
+
+
+
+<div class="row" *ngIf="searchedBlogs.length!==0">
+  <div class="card mb-3 " id="each-card" *ngFor="let blog of searchedBlogs">
+    <img src="{{blog.img}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{blog.title}}</h5><br>
+      <p class="card-text">By- {{blog.name}}</p><br>
+
+      <button (click)="loadTheBlog(blog)" class="btn  btn-md">View More</button>
+    </div>
+  </div>
+</div>
+
+<div class="row" *ngIf="searchedBlogs.length==0">
+  <div class="card mb-3 col-md-12" id="each-card" *ngFor="let result of results">
+    <img src="{{result.img}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{result.title}}</h5><br>
+      <p class="card-text">By- {{result.name}}</p><br>
+
+      <button (click)="loadTheBlog(result)" class="btn  btn-md">View More</button>
+    </div>
+  </div>
+</div>

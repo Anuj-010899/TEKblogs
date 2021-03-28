@@ -1,0 +1,53 @@
+.example-card {
+  max-width: 80%;
+  background-color: rgba(246, 248, 144, 0.466);
+
+}
+
+.button-container {
+  margin-bottom: 2%;
+}
+
+.mat-card-image {
+  margin-left: 10%;
+  width: 80%;
+  border-radius: 5px;
+  
+}
+
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+
+#card-img-main {
+  max-width: 100%;
+  height: auto;
+}
+
+pre {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight:normal;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: larger;
+  word-spacing: 10px;
+}
+
+button{
+  background-color: darkred;
+  color: white;
+  border: darkred 1px solid;
+}
+button:hover{
+  background-color: rgb(228, 245, 245);
+  color: darkred;
+}

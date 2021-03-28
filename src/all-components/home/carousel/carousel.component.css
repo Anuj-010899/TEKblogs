@@ -1,0 +1,28 @@
+#carouselExampleDark{
+    margin-bottom: 3%;
+    margin-top: 3%;
+
+}
+.carousel-inner{
+    border-radius: 30px;
+    border: rgba(151, 3, 52, 0.767) 4px solid;
+}
+
+div img{
+    height: 500px;
+    width: 100%;
+}
+
+h1{
+    font-weight: 900;
+    font-size:xx-large;
+    background-color: rgba(255, 255, 255, 0.445);
+    height: auto;
+    padding-top: 30px;
+    
+}
+p{
+    font-size: larger;
+    font-weight: bold;
+    background-color:  rgba(255, 255, 255, 0.445);;
+}

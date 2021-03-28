@@ -1,0 +1,50 @@
+<div class="button-container">
+  <button class="btn btn-success btn-md" (click)="backButton()">Back</button>
+</div>
+<div class="container">
+  <h1>Create New Blog</h1>
+</div>
+<form (ngSubmit)="createBlog(f.value)" class="row g-3" #f="ngForm">
+  <div class="col-md-6">
+    <label for="inputName" class="form-label">Author Name(*)</label>
+    <input type="text" name="name" class="form-control" id="inputName" minlength="3" ngModel required #name="ngModel">
+    <!-- <span class="help-block" *ngIf="!name.valid && name.touched"> Please Enter Your Name. </span> -->
+    
+    <span  *ngIf="(name.errors?.required)&&(name.touched)">Please Enter Your Name</span>
+    <span  *ngIf="(name.errors?.minlength)&&(name.touched)">Name must be of atleast 3 characters</span>
+
+  </div>
+  <div class="col-md-6">
+    <label for="inputEmail" class="form-label">Author Email(*)</label>
+    <input type="email" name="email"  class="form-control" id="inputEmail" ngModel required #email="ngModel" email>
+    <span class="help-block" *ngIf="!email.valid && email.touched"> Please Enter A Valid Email ! </span>
+  </div>
+  <div class="col-md-6">
+    <label for="inputTitle" class="form-label">Blog Title(*)</label>
+    <input type="text" name="title"  class="form-control" id="inputTitle" #title="ngModel" ngModel required>
+    <span class="help-block" *ngIf="!title.valid && title.touched"> Please Enter Your Blog Title. </span>
+  </div>
+  <div class="col-md-6">
+    <label for="inputCategory" class="form-label">Blog Category(*)</label>
+    <select id="inputCategory" name="category"  class="form-select" ngModel required #category="ngModel">
+      <option *ngFor="let cat of categories">{{cat}}</option>
+    </select>
+    <span class="help-block" *ngIf="!category.valid && category.touched"> Please Choose Your Blog Category. </span>
+  </div>
+  <div class="col-12">
+    <label for="inputImageURL" class="form-label">Image Link(*)</label>
+    <input type="url" name="img"  class="form-control" id="inputImageURL" ngModel required #img="ngModel" >
+    <span class="help-block" *ngIf="!img.valid && img.touched"> Please Enter The Correct Image URL </span>
+  </div>
+  <div class="col-12">
+    <label for="inputContent" class="form-label">Blog Content(*)</label>
+    <textarea id="inputContent" class="form-control" name="inputContent" minlength="1000" rows="10" cols="50" ngModel required #content="ngModel"></textarea>
+    <span  *ngIf="((content.errors?.required)&&(content.touched))">Please Provide Your Blog Content</span>
+      <span  *ngIf="(content.errors?.minlength)&&(content.touched)">Blog Title must be of atleast 1000 characters.</span>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary" 
+    [disabled]="!f.valid"
+    >Submit</button>
+  </div>
+</form>

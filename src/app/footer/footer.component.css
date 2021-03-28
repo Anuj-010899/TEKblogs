@@ -1,0 +1,17 @@
+footer{
+    height:110px;
+    width: 100%;
+    background-color:  rgba(151, 3, 52, 0.767);
+    text-align: center;
+    padding: 3% 0 3% 0;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    border-radius: 0 0 30px 30px;
+}
+footer a{
+
+    color: white;
+    
+    padding: 1%;
+}

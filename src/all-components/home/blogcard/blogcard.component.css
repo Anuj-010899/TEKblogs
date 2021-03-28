@@ -1,0 +1,29 @@
+#card-div:hover {
+  transform: scale(1.1);
+}
+
+#card-div {
+  margin:2%;
+  background:linear-gradient(to right,rgb(235, 175, 175),rgba(151, 3, 52, 0.767));
+  text-align: left;
+  border-radius: 20px;
+  padding: 2%;
+
+}
+
+#card-div a img {
+
+  border-radius: 20px;
+
+}
+
+h5{
+  color: white;
+  font-weight: bolder;
+  font-size: large;
+  line-height: 25px;
+}
+p{
+  color: white;
+  font-size: large;
+}

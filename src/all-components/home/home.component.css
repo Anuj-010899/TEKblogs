@@ -1,0 +1,12 @@
+#blog-card-category{
+    margin: 5% 0 1% 0;
+    padding: 2%;
+    border: 2px rgba(151, 3, 52, 0.767) solid;
+    border-radius: 30px;
+    text-align: center;
+    background-color: rgba(246, 248, 144, 0.466);;
+}
+#blog-card-category h1{
+    font-weight: bolder;
+    font-size: x-large;
+}

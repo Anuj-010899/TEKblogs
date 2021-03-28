@@ -1,0 +1,29 @@
+input.ng-invalid.ng-touched,select.ng-invalid.ng-touched,textarea.ng-invalid.ng-touched{
+    border-color: red;
+}
+form{
+    border:rgba(255, 0, 0, 0.582) 2px solid ;
+    padding: 3%;
+    border-radius: 30px;
+    margin-top: 3%;
+    background-color: rgba(246, 248, 144, 0.466);;
+}
+span{
+    background-color: rgba(255, 0, 0, 0.582);
+    color: white;
+ 
+}
+.container{
+    text-align: center;
+    color:  rgba(255, 0, 0, 0.582);
+    
+}
+h1{
+    font-size:2rem;
+    font-weight: bolder;
+}
+label{
+    color: rgb(1, 29, 29);
+    font-size: 1rem;
+    font-weight: bold;
+}
