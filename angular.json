@@ -29,7 +29,6 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              
               "src/shared/images"
             ],
             "styles": [
@@ -130,6 +129,10 @@
               "devServerTarget": "TEKblogs:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
