@@ -9,13 +9,15 @@ import { Router } from '@angular/router';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
 
   sendMail(fvalue:any){
     console.log(fvalue);
+    alert("Thanks " +fvalue.txtName+" for contacting us!!!");
+    this.router.navigate(["home"]);
   } 
 
 }

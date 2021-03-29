@@ -11,6 +11,7 @@ body{
 .contact-form .form-control{
     border-radius:1rem;
     margin: 4%;
+    border: darkred 1px solid;
 }
 .contact-image{
     text-align: center;
@@ -31,7 +32,7 @@ body{
     margin-bottom: 8%;
     margin-top: -10%;
     text-align: center;
-    color: #0062cc;
+    color: darkred;
 }
 .contact-form .btnContact {
     width: 50%;
@@ -60,4 +61,6 @@ body{
 span{
     background-color: darkred;
     color: white;
+    height: 20px;
+    border-radius: 2px;
 }
